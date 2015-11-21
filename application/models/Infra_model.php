@@ -22,4 +22,32 @@ class Infra_model extends CI_Model
 				);
 	}
 
+	public function count_complete()
+	{
+		$array_data = $this->get_data();
+		$array_data = $array_data['result'];
+
+		$counter = 0;
+		foreach($array_data as $ad)
+		{
+			if($ad->status_percent == 100)
+			$counter++;
+		}
+
+		return $counter;
+
+	}
+
+	public function count_incomplete()
+	{
+		$this->db->select('*');
+		$this->db->from('data');
+		
+		$this->db->where_not_in('status_percent', '100');
+		$query = $this->db->get();
+
+		return $query->num_rows();
+
+	}
+
 }

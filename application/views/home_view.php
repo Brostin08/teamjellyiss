@@ -8,13 +8,29 @@
 				</nav>
 			</div>
 		
-			<div class = "row">
+			<div class = "row" style="height:500px;">
 				<div id = "map"></div>	
 			</div>
 
 
 
-
+			<div class="row">
+					<div class="col s2">
+						<div class="container">
+							<h3><span class="blue-text text-darken-2" id="numberprojects"></span></h3><span class="blue-text text-darken-2" id="numberprojectsword" ></span>
+						</div>
+					</div>
+					<div class="col s2">
+						<div class="container">
+							<h3><span class="blue-text text-darken-2" id="numcomplete"></span></h3><span class="blue-text text-darken-2" id="numcompleteword" ></span>
+						</div>
+					</div>
+					<div class="col s2">
+						<div class="container">
+							<h3><span class="blue-text text-darken-2" id="numincomplete"></span></h3><span class="blue-text text-darken-2" id="numincompleteword" ></span>
+						</div>
+					</div>
+			</div>
 		    <div class="row">
 		      <div class="col s12 m6">
 		        <div class="card-panel">

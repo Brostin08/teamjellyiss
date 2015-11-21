@@ -15,8 +15,10 @@ class Home extends User_Controller
 
   public function index()
   {
-
-      $this->data['data'] = $this->Infra_model->get_data();
+      $data = $this->Infra_model->get_data();;
+      $this->data['data'] = $data;
+      $this->data['num_complete'] = $this->Infra_model->count_complete();
+      $this->data['num_incomplete'] = $this->Infra_model->count_incomplete();
       $this->render('home_view');
 
 
