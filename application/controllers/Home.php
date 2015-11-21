@@ -9,15 +9,17 @@ class Home extends User_Controller
     parent::__construct();
 
   
-    $this->load->library('form_validation');
-    $this->load->helper('form');
-    $this->load->helper('url');
-    $this->load->helper('date');
+
+    $this->load->model('Infra_model');
   }
 
   public function index()
   {
+
+      $this->data['data'] = $this->Infra_model->get_data();
       $this->render('home_view');
+
+
 
   }
 
