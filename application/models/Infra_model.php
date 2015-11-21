@@ -16,7 +16,10 @@ class Infra_model extends CI_Model
 		$this->db->order_by('project_name');
 		$query = $this->db->get();
 
-		return $query->result();
+		return array(
+				'result' => $query->result(),
+				'num_rows' => $query->num_rows()
+				);
 	}
 
 }

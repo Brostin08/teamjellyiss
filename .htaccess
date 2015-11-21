@@ -4,7 +4,7 @@ SetEnvIf Host www.sjcniportal.esy.es$ CI_ENV=testing
 SetEnvIf Host localhost/codeigniter$ CI_ENV=development
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond $1 !^(index\.php|images|robots\.txt|assets)
+  RewriteCond $1 !^(index\.php|images|robots\.txt|assets|bower_components)
   RewriteRule ^(.*)$ index.php?/$1 [L]
 
 <IfModule !mod_rewrite.c>
