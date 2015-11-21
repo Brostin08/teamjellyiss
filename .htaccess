@@ -1,0 +1,16 @@
+RewriteEngine On
+SetEnvIf Host www.sjcniportal.esy.es$ CI_ENV=production
+SetEnvIf Host www.sjcniportal.esy.es$ CI_ENV=testing
+SetEnvIf Host localhost/codeigniter$ CI_ENV=development
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond $1 !^(index\.php|images|robots\.txt|assets)
+  RewriteRule ^(.*)$ index.php?/$1 [L]
+
+<IfModule !mod_rewrite.c>
+  # If we don't have mod_rewrite installed, all 404's
+  # can be sent to index.php, and everything works as normal.
+  # Submitted by: ElliotHaughin
+
+  ErrorDocument 404 /index.php
+</IfModule>
