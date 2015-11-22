@@ -7,8 +7,11 @@ The Spiral Project's aim is to inform the filipino people of their
 
 ##Technology and Data used
 [Codeigniter](https://www.codeigniter.com/)
-[Materialize.css](http://materializecss.com/)
+
+[Materialize UI kit](http://materializecss.com/)
+
 [Morris Charts](http://morrisjs.github.io/morris.js/)
+
 [Open Data Philippines](http://data.gov.ph/)
 
 ##Credits
