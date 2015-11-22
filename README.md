@@ -4,6 +4,10 @@ Spiral Project's aim is to provide service to the filipino people in keeping the
 We focused on disseminating information about the different infrastructure plans of the government,as well as their performance to their target completion dates.
 
 ##Screenshots
+![Home](https://raw.githubusercontent.com/Brostin08/teamjellyiss/master/ss/screen1.jpg)
+![Analytics](https://raw.githubusercontent.com/Brostin08/teamjellyiss/master/ss/screen2.jpg)
+![Data](https://raw.githubusercontent.com/Brostin08/teamjellyiss/master/ss/screen3.jpg)
+
 
 
 ##Technology and Data used
