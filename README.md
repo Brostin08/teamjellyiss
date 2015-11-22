@@ -13,6 +13,13 @@ We focused on disseminating information about the different infrastructure plans
 
 [Morris Charts](http://morrisjs.github.io/morris.js/)
 
+###Other Jquery Widgets
+
+ * Smooth Scroll
+ * Font Awesome
+ * Font - Montserrat
+
+
 [Open Data Philippines - Infrastructure Project Status](http://data.gov.ph/catalogue/dataset/electronic-project-life-cycle)
 
 ##Credits
