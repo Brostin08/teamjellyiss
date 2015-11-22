@@ -12,7 +12,7 @@ The Spiral Project's aim is to inform the filipino people of their
 
 [Morris Charts](http://morrisjs.github.io/morris.js/)
 
-[Open Data Philippines](http://data.gov.ph/)
+[Open Data Philippines - Infrastructure Project Status](http://data.gov.ph/catalogue/dataset/electronic-project-life-cycle)
 
 ##Credits
 
