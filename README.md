@@ -7,6 +7,9 @@ We focused on disseminating information about the different infrastructure plans
 
 
 ##Technology and Data used
+
+[Open Data Philippines - Infrastructure Project Status](http://data.gov.ph/catalogue/dataset/electronic-project-life-cycle)
+
 [Codeigniter](https://www.codeigniter.com/)
 
 [Materialize UI kit](http://materializecss.com/)
@@ -20,7 +23,6 @@ We focused on disseminating information about the different infrastructure plans
  * Font - Montserrat
 
 
-[Open Data Philippines - Infrastructure Project Status](http://data.gov.ph/catalogue/dataset/electronic-project-life-cycle)
 
 ##Credits
 
