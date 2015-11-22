@@ -50,4 +50,66 @@ class Infra_model extends CI_Model
 
 	}
 
+	public function send_action($action, $id, $action)
+	{
+		$stats = $this->get_current_stats($id);
+		$counter = 0;
+		if($action == 'like')
+		{
+
+		$counter = $stats->like_count;
+		$counter++;
+
+		}
+
+		elseif($action == 'dislike')
+		{
+
+		$counter = $stats->dislike_count;
+		$counter++;
+		}
+
+		else
+		{
+			return false;
+		}
+
+
+		$this->db->trans_start();
+
+	    $array = array(
+	        $action.'_count' => $counter
+	    );
+
+	    $this->db->set($array);
+
+		$this->db->where('project_id',$id);
+
+	    $this->db->update('data');
+
+	    $this->db->trans_complete();
+
+	          if ($this->db->trans_status() === FALSE)
+	          {
+	              $this->db->trans_rollback();
+	                return $msg_result = "Failed sending".$action;
+
+	          }
+
+	          $this->db->trans_commit();
+
+
+	          return $msg_result = "Success sending".$action;
+	}
+
+	private function get_current_stats($id)
+	{
+		$this->db->select('*');
+		$this->db->from('data');
+		$this->db->where('project_id',$id);
+		$query = $this->db->get();
+
+		return $query->row();
+	}
+
 }
