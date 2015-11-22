@@ -1,6 +1,7 @@
 #Spiral Project
 
-The Spiral Project's aim is to inform the filipino people of their
+Spiral Project's aim is to provide service to the filipino people in keeping them informed of their tax's worth.
+We focused on disseminating information about the different infrastructure plans of the government,as well as their performance to their target completion dates.
 
 ##Screenshots
 
